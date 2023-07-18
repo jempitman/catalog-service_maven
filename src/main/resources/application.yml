@@ -11,4 +11,17 @@ polar:
   greeting: Welcome to the local book catalog!
 
 
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
+    hikari:
+      maximum-pool-size: 50
+      minimum-idle: 5
+      connection-timeout: 2000
+  sql:
+    init:
+      mode: always
+
 
