@@ -20,8 +20,7 @@ spring:
       maximum-pool-size: 50
       minimum-idle: 5
       connection-timeout: 2000
-  sql:
-    init:
-      mode: always
+  flyway:
+    baseline-on-migrate: true
 
 
