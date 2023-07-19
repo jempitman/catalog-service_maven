@@ -97,8 +97,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>ghcr.io/jempitman/${project.artifactId}:${project.version}</name>
-                        <publish>true</publish>
+<!--                        <name>ghcr.io/jempitman/${project.artifactId}:${project.version}</name>-->
+<!--                        <publish>false</publish>-->
                         <env>
                             <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
                         </env>
