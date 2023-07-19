@@ -12,6 +12,8 @@ polar:
 
 
 spring:
+  application:
+    name: catalog-service_maven
   datasource:
     username: user
     password: password
