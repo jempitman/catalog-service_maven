@@ -106,7 +106,7 @@
                     <docker>
                         <publishRegistry>
                             <username>jempitman</username>
-                            <password>${env.CLOUD_NATIVE_JEM}</password>
+                            <token>${env.CLOUD_NATIVE_JEM}</token>
                             <url>https://ghcr.io</url>
                         </publishRegistry>
                     </docker>
