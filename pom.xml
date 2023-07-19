@@ -16,6 +16,7 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <module.image.name>${project.name}</module.image.name>
     </properties>
     <dependencies>
         <dependency>
@@ -95,14 +96,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <image>
-<!--                        <name>ghcr.io/jempitman/${project.artifactId}:${project.version}</name>-->
-<!--                        <publish>false</publish>-->
-                        <env>
-                            <BP_JVM_VERSION>17.*</BP_JVM_VERSION>
-                        </env>
-                    </image>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>build-image</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <image>-->
+<!--                        <imageName>${module.image.name}</imageName>-->
+<!--&lt;!&ndash;                        <name>ghcr.io/jempitman/${project.artifactId}:${project.version}</name>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <publish>false</publish>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <env>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <BP_JVM_VERSION>17.*</BP_JVM_VERSION>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </env>&ndash;&gt;-->
+<!--                    </image>-->
 <!--                    <docker>-->
 <!--                        <publishRegistry>-->
 <!--                            <username>jempitman</username>-->
@@ -110,7 +119,7 @@
 <!--                            <url>https://ghcr.io</url>-->
 <!--                        </publishRegistry>-->
 <!--                    </docker>-->
-                </configuration>
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
