@@ -66,6 +66,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build container image
         run: |
+          chmod +x mvnw
           ./mvnw spring-boot:build-image
       - name: OCI image vulnerability scanning
         uses: anchore/scan-action@v3
