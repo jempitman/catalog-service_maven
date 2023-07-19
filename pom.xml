@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.polarbookshop</groupId>
-    <artifactId>catalog-service</artifactId>
+    <artifactId>catalog-service_maven</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>catalog-service</name>
+    <name>catalog-service_maven</name>
     <description>catalog-service</description>
     <properties>
         <java.version>17</java.version>
